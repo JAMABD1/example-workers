@@ -30,7 +30,7 @@ export function VideoPlayer({
   const [isReady, setIsReady] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
-  const controlsTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined)
+  const controlsTimeoutRef = useRef<NodeJS.Timeout>()
 
   useEffect(() => {
     if (isPlaying) {
