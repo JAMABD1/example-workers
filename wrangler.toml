@@ -1,0 +1,9 @@
+name = "cloudflare-r2-demo"
+compatibility_date = "2025-11-11"
+
+# For Cloudflare Pages deployment
+pages_build_output_dir = ".vercel/output/static"
+
+[env.production]
+name = "cloudflare-r2-demo"
+
